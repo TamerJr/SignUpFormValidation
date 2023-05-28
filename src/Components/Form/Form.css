@@ -1,0 +1,108 @@
+form {
+  width: fit-content;
+  margin: auto;
+}
+fieldset {
+  width: 500px;
+  border-radius: 15px 35px 0px 35px;
+}
+legend {
+  font-size: 28px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.599);
+}
+p label {
+  font-weight: thin;
+  color: rgba(0, 0, 0, 0.599);
+}
+p input {
+  display: block;
+  margin-top: 0.25rem;
+  width: 90%;
+  padding-left: 15px;
+  height: 30px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.099);
+  border-radius: 5px;
+}
+p:first-of-type input,
+p:nth-of-type(2) input {
+  width: 190px;
+}
+p:first-of-type,
+p:nth-of-type(2) {
+  display: inline-block;
+}
+p:nth-of-type(2) {
+  margin: 0rem 2.5rem;
+}
+
+.valid {
+  background-color: #4cb31018;
+}
+.notValid {
+  background-color: #d7113f10;
+}
+.buttonDiv{
+    margin: auto;
+    max-width: fit-content;
+}
+button {
+  background-color: #4b9703a7;
+  transition: 400ms ease-in-out;
+  border: none;
+  align-self: center;
+  padding: 10px 25px;
+  color: aliceblue;
+  font-size: 16px;
+  vertical-align: middle;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #4b9703de;
+}
+button:hover {
+  background-color: #4b9703de;
+}
+.PasswordDiv {
+  position: relative;
+}
+.alert {
+  position: absolute;
+  width: 300px;
+  border-radius: 2px;
+  text-align: center;
+  background-color: #e20c0cb3;
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  top: -10px;
+  left: 15%;
+  font-size: 13px;
+}
+.alert p {
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+@media only screen and (max-width: 540px) {
+  fieldset {
+    width: 320px;
+  }
+  p:first-of-type input,
+  p:nth-of-type(2) input {
+    width: 90%;
+  }
+  p:first-of-type,
+  p:nth-of-type(2) {
+    display: block;
+  }
+  p:nth-of-type(2) {
+    margin:0;
+  }
+  .alert{
+    width: 270px;
+    top:-30px;
+    left:5%;
+  }
+}
